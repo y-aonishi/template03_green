@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:ror="http://rorweb.com/" version="2.0">
+<channel>
+<title>サイトタイトル</title>
+<link>http://aircraftphotos.net/test6/</link>
+<ror:about>sitemap</ror:about>
+<ror:type>SiteMap</ror:type>
+<item>
+<title>サイトタイトル</title>
+<link>http://aircraftphotos.net/test6/index.html</link>
+<description/>
+<ror:keywords/>
+<ror:updated>2015-07-24</ror:updated>
+<ror:updatePeriod>daily</ror:updatePeriod>
+<ror:sortOrder>0</ror:sortOrder>
+<ror:type>SiteMap</ror:type>
+</item>
+<item>
+<title>サイトマップ |サイトタイトル</title>
+<link>http://aircraftphotos.net/test6/sitemap.html</link>
+<description/>
+<ror:keywords/>
+<ror:updated>2015-07-24</ror:updated>
+<ror:updatePeriod>daily</ror:updatePeriod>
+<ror:sortOrder>0</ror:sortOrder>
+<ror:type>SiteMap</ror:type>
+</item>
+<item>
+<title>コンテンツタイトル</title>
+<link>http://aircraftphotos.net/test6/category0001/contents0001.html</link>
+<description>" </description>
+<ror:keywords>" </ror:keywords>
+<ror:updated>2015-07-24</ror:updated>
+<ror:updatePeriod>weekly</ror:updatePeriod>
+<ror:sortOrder>1</ror:sortOrder>
+<ror:type>SiteMap</ror:type>
+</item>
+<item>
+<title>カテゴリータイトル</title>
+<link>http://aircraftphotos.net/test6/category0001/index.html</link>
+<description>" </description>
+<ror:keywords>" </ror:keywords>
+<ror:updated>2015-07-24</ror:updated>
+<ror:updatePeriod>weekly</ror:updatePeriod>
+<ror:sortOrder>1</ror:sortOrder>
+<ror:type>SiteMap</ror:type>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,1056 @@
+@charset "shift_jis";
+
+
+
+/*
+		margin, padding のリセット
+-------------------------------------------------- */
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,p{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+		強調表示解除
+-------------------------------------------------- */
+
+
+address,caption,cite,code,dfn,h1,h2,h3,h4,th,var{
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/*
+		block element
+-------------------------------------------------- */
+
+
+div,h1,h2,h3,h4,h5,h6,p,blockquote,pre,address{
+  display: block;
+}
+
+
+/*
+		hタグ
+-------------------------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 1em;
+}
+
+
+/*
+		Body
+-------------------------------------------------- */
+
+
+body{
+	font-family: "ＭＳ Ｐゴシック","平成角ゴシック",sans-serif;
+	font-size: 100%;
+	color: #000000;
+	line-height: 140%;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+
+/*
+		Link
+-------------------------------------------------- */
+
+
+a{
+	color: #003399;
+	text-decoration: underline;
+}
+a:hover{
+	color: #cc0000;
+	text-decoration: underline;
+}
+
+
+/*
+		Img
+-------------------------------------------------- */
+
+
+img{
+	border: none;
+	vertical-align: bottom;
+	margin: 0px;
+	padding: 0px;
+	max-width:100%;/**/
+	height:auto;/**/
+}
+
+img a:link{ text-decoration: none; }
+img a:hover{ text-decoration: none; }
+
+
+/*
+		Paragraph
+-------------------------------------------------- */
+
+
+p{
+	line-height: 140%;
+	color: #000;
+}
+
+
+/*
+		List
+-------------------------------------------------- */
+
+
+ul,ol,dl{
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+
+
+li,dt,dd{
+	margin: 0px;
+	padding: 0px;
+	list-style: none none outside;
+	font-size: 100%;
+}
+
+
+/*
+		List
+-------------------------------------------------- */
+
+
+hr{
+	clear: both;
+	margin: 5px 0px;
+	border: 1px #FFFFD9 dotted;
+}
+
+
+/*
+		Clearfix
+-------------------------------------------------- */
+
+
+.clearfix:after {
+   content: ".";
+   display: block;
+   clear: both;
+   height: 0;
+   visibility: hidden;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+/*
+		テーブル
+-------------------------------------------------- */
+table {
+	width:98%;
+	margin:auto;
+}
+
+/*陳列型テーブル（縦）*/
+
+.exh-l{
+	border-collapse:collapse;
+	max-width: 600px;
+	table-layout:fixed; /**/
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+.exh-l th{
+	text-align: center;
+	padding:0px 0px 4px 0px;
+}
+
+
+.exh-l img{
+	border:0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.exh-l td{
+	background-color: #F9F9F7;
+	font-size: 14px;
+	border: solid 1px #757575;
+	padding: 10px;
+}
+
+.exh-l a{
+	text-decoration: none;
+	font-weight: bold;
+	color:#003399;
+}
+
+.exh-l a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+	color:#cc0000;
+}
+
+
+/*陳列型テーブル（横）*/
+
+.exh-s{	
+	border-collapse:collapse;
+	max-width: 600px;
+	table-layout:fixed; /**/
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.exh-s th{
+	text-align: center;
+	padding:0px 0px 4px 0px;
+}
+
+.exh-s img{
+	border:0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.exh-s td{
+	background-color: #F9F9F7;
+	font-size: 14px;
+	text-align: center;
+	border: solid 1px #757575;
+	padding: 5px;
+	width: 33%;
+}
+
+.exh-s a{
+	text-decoration: none;
+	font-weight: bold;
+	color:#003399;
+}
+
+.exh-s a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+	color:#cc0000;
+}
+
+
+/*ランキング型テーブル*/
+
+.rank-one{
+	max-width: 600px;
+	table-layout:fixed; /**/
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse:collapse;
+	border: solid 1px #757575;
+	text-align: left;
+}
+
+.rank-one img{
+	border:0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.rank-one th{
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	background-color: #FFFFD9;
+	background-repeat: repeat-x;
+	color: #000000;
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #757575;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #757575;
+	width:50px;
+}
+
+.rank-one td{
+	background-color: #FFFFFF;
+	vertical-align: middle;
+	padding:10px;
+	vertical-align:top;
+	font-size: 14px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #757575;
+}
+
+
+.rank-one td a{
+	text-decoration: none;
+	font-weight: bold;
+	color:#003399;
+}
+
+.rank-one td a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+	color:#cc0000;
+}
+
+
+.rank-one .rnkitem {
+	max-width:140px; /**/
+	vertical-align: top;
+	text-align: left;
+	font-weight: bold;
+}
+
+.rank-one .rnkitem img {
+	vertical-align: top;
+}
+
+.alt td{
+	background-color:#F5F5F5;
+}
+
+
+/*ランキング型テーブル２*/
+
+.rank-two{
+	max-width:600px;
+	table-layout:fixed; /**/
+	border: 2px solid #CCCCCC;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;
+}
+
+.rank-two img {
+	border: 0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+	
+.rank-two th{
+	border:1px solid #999999;
+	width:120px;
+	text-align: center;
+}
+
+.rank-two td{
+	border:1px solid #999999;
+	padding: 5px 20px 5px 20px;
+	line-height: 20px;
+	font-size:14px;
+}
+
+.rank-two td a{
+	text-decoration: none;
+}
+
+.rank-two td a:hover{
+	text-decoration: underline;
+}
+
+.rank-two_i_title{
+	background-color: #FFFFD9;
+	text-align: center;
+	padding: 0px;
+}
+
+.rank-two_i_title img{
+	padding: 0px;
+}
+
+.rank-two_c_title {
+	background-color: #FFFFD9;
+	font-weight: bold;
+	text-align: center;
+	witdh: 500px;
+}
+	
+.rank-two_c_title a {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+/*ランキング型テーブル３*/
+
+.rank-three{
+	max-width:600px;
+	table-layout:fixed; /**/
+	border: 2px solid #CCCCCC;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;
+}
+
+.rank-three img {
+	border: 0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.rank-three th{
+	border:1px solid #999999;
+}
+
+.rank-three td{
+	border:1px solid #999999;
+	padding: 5px 10px 5px 10px;
+	line-height: 20px;
+	font-size:14px;
+}
+
+.rank-three td a{
+	text-decoration: none;
+}
+
+.rank-three td a:hover{
+	text-decoration: underline;
+}
+
+
+.rank-three_i_title{
+	background-color: #FFFFD9;
+	text-align: center;
+	padding: 0px;
+}
+
+.rank-three_i_title img{
+	padding: 0px;
+}
+
+.rank-three_c_title {
+	background-color: #FFFFD9;
+	font-weight: bold;
+}
+
+.rank-three_c_title a{
+	font-size: 20px;
+}
+
+
+/*
+		よく使う文字修飾
+-------------------------------------------------- */
+
+/*単色指定*/
+
+.fc-red{ color: #ff0000; }	/*赤色*/
+.fc-blue{ color: #0000ff; }	/*青色*/
+.fc-yellow{ color: #ffff00; }	/*黄色*/
+.fc-green{ color: #00ff00; }	/*緑色*/
+
+
+/*太字*/
+
+.fw-b{ font-weight: bold; }
+
+
+/*単色指定＋太字*/
+
+.fcw-red{ color: #ff0000; font-weight: bold; }		/*赤色太字*/
+.fcw-blue{ color: #0000ff; font-weight: bold; }		/*青色太字*/
+.fcw-yellow{ color: #ffff00; font-weight: bold; }	/*黄色太字*/
+.fcw-green{ color: #00ff00; font-weight: bold; }	/*緑色太字*/
+
+
+/*文字サイズ*/
+
+.fs-80{ font-size: 80%; }
+.fs-90{ font-size: 90%; }
+.fs-110{ font-size: 110%; }
+.fs-120{ font-size: 120%; }
+.fs-130{ font-size: 130%; }
+.fs-140{ font-size: 140%; }
+.fs-150{ font-size: 150%; }
+
+
+/*文字サイズ＋太字*/
+
+.fsw-80{ font-weight: bold; font-size: 80%; }
+.fsw-90{ font-weight: bold; font-size: 90%; }
+.fsw-100{ font-weight: bold; font-size: 100%; }
+.fsw-110{ font-weight: bold; font-size: 110%; }
+.fsw-120{ font-weight: bold; font-size: 120%; }
+.fsw-130{ font-weight: bold; font-size: 130%; }
+.fsw-140{ font-weight: bold; font-size: 140%; }
+.fsw-150{ font-weight: bold; font-size: 150%; }
+
+
+/*テキストデコレーション*/
+
+.td-n{ text-decoration: none; }
+.td-u{ text-decoration: underline; }
+.td-t{ text-decoration: line-through; }
+.td-o{ text-decoration: overline; }
+.td-b{ text-decoration: blink; }
+
+
+/*アンダーライン＋α*/
+
+/*下線＋赤文字*/
+
+.tdu-r{
+	text-decoration: underline;
+	color: #ff0000;
+}
+
+/*下線＋赤文字＋太字*/
+
+.tdu-rb{
+	text-decoration: underline;
+	color: #ff0000;
+	font-weight: bold;
+}		
+
+
+/*下線＋赤文字＋太字１２０％*/
+
+.tdu-rb120{
+	text-decoration: underline;
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
+/*単色指定＋文字サイズ*/
+
+.fcs-red80{ color: #ff0000; font-size: 80%; }		/*赤色80%*/
+.fcs-red120{ color: #ff0000; font-size: 120%; }		/*赤色120%*/
+.fcs-red140{ color: #ff0000; font-size: 140%; }		/*赤色140%*/
+.fcs-red160{ color: #ff0000; font-size: 160%; }		/*赤色160%*/
+
+
+.fcs-blue80{ color: #0000ff; font-size: 80%; }		/*青色80%*/
+.fcs-blue120{ color: #0000ff; font-size: 120%; }	/*青色120%*/
+.fcs-blue140{ color: #0000ff; font-size: 140%; }	/*青色140%*/
+.fcs-blue160{ color: #0000ff; font-size: 160%; }	/*青色160%*/
+
+
+.fcs-yellow80{ color: #ffff00; font-size: 80%; }	/*黄色80%*/
+.fcs-yellow120{ color: #ffff00; font-size: 120%; }	/*黄色120%*/
+.fcs-yellow140{ color: #ffff00; font-size: 140%; }	/*黄色140%*/
+.fcs-yellow160{ color: #ffff00; font-size: 160%; }	/*黄色160%*/
+
+
+.fcs-green80{ color: #00ff00; font-size: 80%; }		/*緑色80%*/
+.fcs-green120{ color: #00ff00; font-size: 120%; }	/*緑色120%*/
+.fcs-green140{ color: #00ff00; font-size: 140%; }	/*緑色140%*/
+.fcs-green160{ color: #00ff00; font-size: 160%; }	/*緑色160%*/
+
+
+/*単色指定＋太字＋文字サイズ*/
+
+.fcws-red80{ color: #ff0000; font-weight: bold; font-size: 80%; }	/*赤色太字80%*/	
+.fcws-red120{ color: #ff0000; font-weight: bold; font-size: 120%; }	/*赤色太字120%*/
+.fcws-red140{ color: #ff0000; font-weight: bold; font-size: 140%; }	/*赤色太字140%*/
+.fcws-red160{ color: #ff0000; font-weight: bold; font-size: 160%; }	/*赤色太字160%*/
+
+
+.fcws-blue80{ color: #0000ff; font-weight: bold; font-size: 80%; }	/*青色太字80%*/	
+.fcws-blue120{ color: #0000ff; font-weight: bold; font-size: 120%; }	/*青色太字120%*/
+.fcws-blue140{ color: #0000ff; font-weight: bold; font-size: 140%; }	/*青色太字140%*/
+.fcws-blue160{ color: #0000ff; font-weight: bold; font-size: 160%; }	/*青色太字160%*/
+
+
+.fcws-yellow80{ color: #ffff00; font-weight: bold; font-size: 80%; }	/*黄色太字80%*/	
+.fcws-yellow120{ color: #ffff00; font-weight: bold; font-size: 120%; }	/*黄色太字120%*/
+.fcws-yellow140{ color: #ffff00; font-weight: bold; font-size: 140%; }	/*黄色太字140%*/
+.fcws-yellow160{ color: #ffff00; font-weight: bold; font-size: 160%; }	/*黄色太字160%*/
+
+
+.fcws-green80{ color: #00ff00; font-weight: bold; font-size: 80%; }	/*緑色太字80%*/	
+.fcws-green120{ color: #00ff00; font-weight: bold; font-size: 120%; }	/*緑色太字120%*/
+.fcws-green140{ color: #00ff00; font-weight: bold; font-size: 140%; }	/*緑色太字140%*/
+.fcws-green160{ color: #00ff00; font-weight: bold; font-size: 160%; }	/*緑色太字160%*/
+
+
+/*背景・黄色　文字・黒*/
+
+.fb-yb{
+	background-color: #ffff00;
+	font-weight: bold;
+	padding: 1px;
+}
+
+
+/*背景・黄色　文字・黒１２０％*/
+
+.fb-yb120{
+	background-color: #ffff00;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 120%;
+}
+
+
+/*背景・黄色　文字・黒１４０％*/
+
+.fb-yb140{
+	background-color: #ffff00;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 140%;
+}
+
+
+/*背景・黄色　文字・赤*/
+
+.fb-yr{
+	color: #ff0000;
+	background-color: #ffff00;
+	font-weight: bold;
+	padding: 1px;
+}
+
+
+/*背景・黄色　文字・赤１２０％*/
+
+.fb-yr120{
+	color: #ff0000;
+	background-color: #ffff00;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 120%;
+}
+
+
+/*背景・黄色　文字・赤１４０％*/
+
+.fb-yr140{
+	color: #ff0000;
+	background-color: #ffff00;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 140%;
+}
+
+
+/*背景・赤　文字・白*/
+
+.fb-rw{
+	color: #ffffff;
+	background-color: #ff0000;
+	padding: 1px;
+	font-weight: bold;
+}	
+
+
+/*背景・青　文字・白*/
+
+.fb-bw{
+	background-color: #0000ff;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 1px;
+}	
+
+
+/*背景・ピンク　文字・白*/
+
+.fb-pw{
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #ff00ff;
+	padding: 1px;
+}
+
+
+/*背景・緑　文字・黒*/
+
+.fb-gb{
+	background-color: #00ff00;
+	padding: 1px;
+	font-weight: bold;
+}
+
+
+/*背景・水色　文字・黒*/
+
+.fb-ab{
+	background-color: #00ffff;
+	padding: 1px;
+	font-weight: bold;
+}
+
+
+/*背景・橙色　文字・黒*/
+
+.fb-ob{
+	font-weight: bold;
+	background-color: #ff6633;
+	padding: 1px;
+}
+
+
+/*
+		font-color
+-------------------------------------------------- */
+
+.fc-000{ color: #000000; }	/*黒色*/
+.fc-333{ color: #333333; }	/*黒灰*/
+.fc-666{ color: #666666; }	/*濃灰*/
+.fc-999{ color: #999999; }	/*薄灰*/
+.fc-ccc{ color: #cccccc; }	/*白灰*/
+.fc-fff{ color: #ffffff; }	/*白色*/
+.fc-900{ color: #990000; }	/*濃赤*/
+.fc-009{ color: #000099; }	/*濃青*/
+.fc-090{ color: #009900; }	/*濃緑*/
+.fc-0ff{ color: #00ffff; }	/*水色*/
+.fc-f63{ color: #ff6633; }	/*橙色*/
+.fc-90f{ color: #9900ff; }	/*紫色*/
+.fc-f0f{ color: #ff00ff; }	/*桃色*/
+.fc-f00{ color: #ff0000; }	/*赤色*/
+.fc-0f0{ color: #00ff00; }	/*緑色*/
+.fc-ff0{ color: #ffff00; }	/*黄色*/
+.fc-00f{ color: #0000ff; }	/*青色*/
+
+
+/*												*/
+/* ---------- これより以下は拡張設定 ----------	*/
+/* ---------- 　使わない場合は放置　 ----------	*/
+/*												*/
+
+
+
+/*------------------------------------------------------------
+		font-size
+-------------------------------------------------------------*/
+
+.fs-70{ font-size: 70%; }
+.fs-80{ font-size: 80%; }
+.fs-90{ font-size: 90%; }
+.fs-110{ font-size: 110%; }
+.fs-120{ font-size: 120%; }
+.fs-130{ font-size: 130%; }
+.fs-140{ font-size: 140%; }
+.fs-150{ font-size: 150%; }
+.fs-160{ font-size: 160%; }
+.fs-170{ font-size: 170%; }
+.fs-180{ font-size: 180%; }
+.fs-190{ font-size: 190%; }
+.fs-200{ font-size: 200%; }
+
+.fs-08{ font-size: 0.8em; }
+.fs-09{ font-size: 0.9em; }
+.fs-10{ font-size: 1.0em; }
+.fs-11{ font-size: 1.1em; }
+.fs-12{ font-size: 1.2em; }
+.fs-13{ font-size: 1.3em; }
+.fs-14{ font-size: 1.4em; }
+.fs-15{ font-size: 1.5em; }
+.fs-16{ font-size: 1.6em; }
+.fs-17{ font-size: 1.7em; }
+.fs-18{ font-size: 1.8em; }
+.fs-19{ font-size: 1.9em; }
+.fs-20{ font-size: 2.0em; }
+.fs-21{ font-size: 2.1em; }
+.fs-22{ font-size: 2.2em; }
+.fs-23{ font-size: 2.3em; }
+.fs-24{ font-size: 2.4em; }
+.fs-25{ font-size: 2.5em; }
+
+
+
+/*------------------------------------------------------------
+		line-height
+-------------------------------------------------------------*/
+
+.lh-110{ line-height: 110%; }
+.lh-120{ line-height: 120%; }
+.lh-130{ line-height: 130%; }
+.lh-140{ line-height: 140%; }
+.lh-150{ line-height: 150%; }
+.lh-160{ line-height: 160%; }
+.lh-170{ line-height: 170%; }
+.lh-180{ line-height: 180%; }
+.lh-190{ line-height: 190%; }
+.lh-200{ line-height: 200%; }
+
+
+/*------------------------------------------------------------
+		text-decoration
+-------------------------------------------------------------*/
+
+.td-n{ text-decoration: none; }
+.td-u{ text-decoration: underline; }
+.td-o{ text-decoration: overline; }
+.td-t{ text-decoration: line-through; }
+.td-b{ text-decoration: blink; }
+
+
+/*------------------------------------------------------------
+		text-align
+-------------------------------------------------------------*/
+
+.ta-c{ text-align: center; }	/*中央寄せ*/
+.ta-r{ text-align: right; }		/*右寄せ*/
+.ta-l{ text-align: left; }		/*左寄せ*/
+
+
+/*------------------------------------------------------------
+		vertical-align
+-------------------------------------------------------------*/
+
+.va-t{ vertical-align: top; }	/*上寄せ*/
+.va-m{ vertical-align: middle; }/*中央寄せ*/
+.va-b{ vertical-align: bottom; }/*下寄せ*/
+
+
+/*------------------------------------------------------------
+		float
+-------------------------------------------------------------*/
+
+.fl-r{
+	float: right;
+	padding: 0 0 10px 10px;
+}	/*右寄せ*/
+.fl-l{
+	float: left;
+	padding: 0 10px 10px 0;
+}	/*左寄せ*/
+
+
+/*------------------------------------------------------------
+		margin
+-------------------------------------------------------------*/
+
+.m0{ margin: 0px!important; }				/*全margin無し*/
+.mt-0{ margin-top: 0px!important; }		/*上marginが0px*/
+.mr-0{ margin-right: 0px!important; }		/*右marginが0px*/
+.mb-0{ margin-bottom: 0px!important; }		/*下marginが0px*/
+.ml-0{ margin-left: 0px!important; }		/*左marginが0px*/
+
+.m1{ margin: 1px!important; }
+.mt-1{ margin-top: 1px!important; }	
+.mr-1{ margin-right: 1px!important; }
+.mb-1{ margin-bottom: 1px!important; }
+.ml-1{ margin-left: 1px!important; }
+
+.m2{ margin: 2px!important; }
+.mt-2{ margin-top: 2px!important; }	
+.mr-2{ margin-right: 2px!important; }
+.mb-2{ margin-bottom: 2px!important; }
+.ml-2{ margin-left: 2px!important; }
+
+.m3{ margin: 3px!important; }
+.mt-3{ margin-top: 3px!important; }	
+.mr-3{ margin-right: 3px!important; }
+.mb-3{ margin-bottom: 3px!important; }
+.ml-3{ margin-left: 3px!important; }
+
+.m4{ margin: 4px!important; }
+.mt-4{ margin-top: 4px!important; }	
+.mr-4{ margin-right: 4px!important; }
+.mb-4{ margin-bottom: 4px!important; }
+.ml-4{ margin-left: 4px!important; }
+
+.m5{ margin: 5px!important; }
+.mt-5{ margin-top: 5px!important; }	
+.mr-5{ margin-right: 5px!important; }
+.mb-5{ margin-bottom: 5px!important; }
+.ml-5{ margin-left: 5px!important; }
+
+.m6{ margin: 6px!important; }
+.mt-6{ margin-top: 6px!important; }	
+.mr-6{ margin-right: 6px!important; }
+.mb-6{ margin-bottom: 6px!important; }
+.ml-6{ margin-left: 6px!important; }
+
+.m7{ margin: 7px!important; }
+.mt-7{ margin-top: 7px!important; }	
+.mr-7{ margin-right: 7px!important; }
+.mb-7{ margin-bottom: 7px!important; }
+.ml-7{ margin-left: 7px!important; }
+
+.m8{ margin: 8px!important; }
+.mt-8{ margin-top: 8px!important; }	
+.mr-8{ margin-right: 8px!important; }
+.mb-8{ margin-bottom: 8px!important; }
+.ml-8{ margin-left: 8px!important; }
+
+.m9{ margin: 9px!important; }
+.mt-9{ margin-top: 9px!important; }	
+.mr-9{ margin-right: 9px!important; }
+.mb-9{ margin-bottom: 9px!important; }
+.ml-9{ margin-left: 9px!important; }
+
+.m10{ margin: 10px!important; }
+.mt-10{ margin-top: 10px!important; }
+.mr-10{ margin-right: 10px!important; }
+.mb-10{ margin-bottom: 10px!important; }
+.ml-10{ margin-left: 10px!important; }
+
+.m15{ margin: 15px!important; }
+.mt-15{ margin-top: 15px!important; }
+.mr-15{ margin-right: 15px!important; }
+.mb-15{ margin-bottom: 15px!important; }
+.ml-15{ margin-left: 15px!important; }
+
+.m20{ margin: 20px!important; }
+.mt-20{ margin-top: 20px!important; }
+.mr-20{ margin-right: 20px!important; }
+.mb-20{ margin-bottom: 20px!important; }
+.ml-20{ margin-left: 20px!important; }
+
+.m25{ margin: 25px!important; }
+.mt-25{ margin-top: 25px!important; }
+.mr-25{ margin-right: 25px!important; }
+.mb-25{ margin-bottom: 25px!important; }
+.ml-25{ margin-left: 25px!important; }
+
+.m30{ margin: 30px!important; }
+.mt-30{ margin-top: 30px!important; }
+.mr-30{ margin-right: 30px!important; }
+.mb-30{ margin-bottom: 30px!important; }
+.ml-30{ margin-left: 30px!important; }
+
+.m40{ margin: 40px!important; }
+.mt-40{ margin-top: 40px!important; }
+.mr-40{ margin-right: 40px!important; }
+.mb-40{ margin-bottom: 40px!important; }
+.ml-40{ margin-left: 40px!important; }
+
+.m50{ margin: 50px!important; }
+.mt-50{ margin-top: 50px!important; }
+.mr-50{ margin-right: 50px!important; }
+.mb-50{ margin-bottom: 50px!important; }
+.ml-50{ margin-left: 50px!important; }
+
+.m60{ margin: 60px!important; }
+.mt-60{ margin-top: 60px!important; }
+.mr-60{ margin-right: 60px!important; }
+.mb-60{ margin-bottom: 60px!important; }
+.ml-60{ margin-left: 60px!important; }
+
+.m70{ margin: 70px!important; }
+.mt-70{ margin-top: 70px!important; }
+.mr-70{ margin-right: 70px!important; }
+.mb-70{ margin-bottom: 70px!important; }
+.ml-70{ margin-left: 70px!important; }
+
+
+/*------------------------------------------------------------
+		padding
+-------------------------------------------------------------*/
+
+.p0{ padding: 0px!important; }				/*全padding無し*/
+.pt-0{ padding-top: 0px!important; }		/*上paddingが0px*/
+.pr-0{ padding-right: 0px!important; }		/*右paddingが0px*/
+.pb-0{ padding-bottom: 0px!important; }	/*下paddingが0px*/
+.pl-0{ padding-left: 0px!important; }		/*左paddingが0px*/
+
+.p1{ padding: 1px!important; }
+.pt-1{ padding-top: 1px!important; }
+.pr-1{ padding-right: 1px!important; }
+.pb-1{ padding-bottom: 1px!important; }
+.pl-1{ padding-left: 1px!important; }
+
+.p2{ padding: 2px!important; }
+.pt-2{ padding-top: 2px!important; }
+.pr-2{ padding-right: 2px!important; }
+.pb-2{ padding-bottom: 2px!important; }
+.pl-2{ padding-left: 2px!important; }
+
+.p3{ padding: 3px!important; }
+.pt-3{ padding-top: 3px!important; }
+.pr-3{ padding-right: 3px!important; }
+.pb-3{ padding-bottom: 3px!important; }
+.pl-3{ padding-left: 3px!important; }
+
+.p4{ padding: 4px!important; }
+.pt-4{ padding-top: 4px!important; }
+.pr-4{ padding-right: 4px!important; }
+.pb-4{ padding-bottom: 4px!important; }
+.pl-4{ padding-left: 4px!important; }
+
+.p5{ padding: 5px!important; }
+.pt-5{ padding-top: 5px!important; }
+.pr-5{ padding-right: 5px!important; }
+.pb-5{ padding-bottom: 5px!important; }
+.pl-5{ padding-left: 5px!important; }
+
+.p6{ padding: 6px!important; }
+.pt-6{ padding-top: 6px!important; }
+.pr-6{ padding-right: 6px!important; }
+.pb-6{ padding-bottom: 6px!important; }
+.pl-6{ padding-left: 6px!important; }
+
+.p7{ padding: 7px!important; }
+.pt-7{ padding-top: 7px!important; }
+.pr-7{ padding-right: 7px!important; }
+.pb-7{ padding-bottom: 7px!important; }
+.pl-7{ padding-left: 7px!important; }
+
+.p8{ padding: 8px!important; }
+.pt-8{ padding-top: 8px!important; }
+.pr-8{ padding-right: 8px!important; }
+.pb-8{ padding-bottom: 8px!important; }
+.pl-8{ padding-left: 8px!important; }
+
+.p9{ padding: 9px!important; }
+.pt-9{ padding-top: 9px!important; }
+.pr-9{ padding-right: 9px!important; }
+.pb-9{ padding-bottom: 9px!important; }
+.pl-9{ padding-left: 9px!important; }
+
+.p10{ padding: 10px!important; }
+.pt-10{ padding-top: 10px!important; }
+.pr-10{ padding-right: 10px!important; }
+.pb-10{ padding-bottom: 10px!important; }
+.pl-10{ padding-left: 10px!important; }
+
+.p15{ padding: 15px!important; }
+.pt-15{ padding-top: 15px!important; }
+.pr-15{ padding-right: 15px!important; }
+.pb-15{ padding-bottom: 15px!important; }
+.pl-15{ padding-left: 15px!important; }
+
+.p20{ padding: 20px!important; }
+.pt-20{ padding-top: 20px!important; }
+.pr-20{ padding-right: 20px!important; }
+.pb-20{ padding-bottom: 20px!important; }
+.pl-20{ padding-left: 20px!important; }
+
+.p30{ padding: 30px!important; }
+.pt-30{ padding-top: 30px!important; }
+.pr-30{ padding-right: 30px!important; }
+.pb-30{ padding-bottom: 30px!important; }
+.pl-30{ padding-left: 30px!important; }
+
+.p40{ padding: 40px!important; }
+.pt-40{ padding-top: 40px!important; }
+.pr-40{ padding-right: 40px!important; }
+.pb-40{ padding-bottom: 40px!important; }
+.pl-40{ padding-left: 40px!important; }
+
+.p50{ padding: 50px!important; }
+.pt-50{ padding-top: 50px!important; }
+.pr-50{ padding-right: 50px!important; }
+.pb-50{ padding-bottom: 50px!important; }
+.pl-50{ padding-left: 50px!important; }
+
+.p60{ padding: 60px!important; }
+.pt-60{ padding-top: 60px!important; }
+.pr-60{ padding-right: 60px!important; }
+.pb-60{ padding-bottom: 60px!important; }
+.pl-60{ padding-left: 60px!important; }
+
+.p70{ padding: 70px!important; }
+.pt-70{ padding-top: 70px!important; }
+.pr-70{ padding-right: 70px!important; }
+.pb-70{ padding-bottom: 70px!important; }
+.pl-70{ padding-left: 70px!important; }

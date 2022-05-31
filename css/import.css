@@ -1,0 +1,5 @@
+@charset "shift_jis";
+
+/* Import Common css */
+@import "common.css";				/* Browser Reset, Common Setting css */
+@import "content.css";				/* Top Page Contents Setting CSSÅ@*/
